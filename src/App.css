@@ -102,3 +102,51 @@
   border: 2px solid rgb(255, 0, 200);
   color: black;
 }
+
+
+
+.modal {
+  position: relative;
+  background-color: white;
+  width: 50vw;
+  height: 50vh;
+  z-index: 1;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.golos{
+  width: 40px;
+}
+
+.select{
+  width: 40px;
+}
