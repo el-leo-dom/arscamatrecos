@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.main-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container .overlay-azul{
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(29, 141, 226);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container .overlay-tijolo{
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 50vw;
+  right: 0;
+  background-color: rgb(129, 32, 12);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-working-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container .mesa-image{
+  position: relative;
+}
+
+.main-working-container .player-slots{
+  position: relative;
+  width: 60%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-working-container .player-slot{
+  position: relative;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
+
+.main-working-container .main-menu-container{
+  position: absolute;
+  margin-right: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 12px;
+  width: 10%;
+}
+
+.main-working-container .main-menu-list{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.main-working-container .main-menu-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
+  height: 10vh;
+  width: 90%;
+  margin: 5%;
+  background-color: rgb(220, 245, 220);
+  border-radius: 12px;
+  border: 2px solid rgb(255, 0, 200);
+  color: black;
 }
